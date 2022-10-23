@@ -16,7 +16,7 @@ BCI Lib
     :target: https://github.com/intsystems/bci/
     :alt: Build status
 
-.. |pypi| image:: https://github.com/intsystems/bci
+.. |pypi| image:: https://img.shields.io/pypi/v/bci
     :target: https://pypi.org/project/bci/
     :alt: PyPI
 
