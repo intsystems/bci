@@ -10,7 +10,7 @@ in this virtualenv.
 
 ::
 
-    bci==0.0.1
+    bci-ml==0.0.1
 
 Include packages.
 

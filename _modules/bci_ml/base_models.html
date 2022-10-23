@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bci.base_models &mdash; BCI  documentation</title>
+  <title>bci_ml.base_models &mdash; BCI  documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
@@ -69,7 +69,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-      <li>bci.base_models</li>
+      <li>bci_ml.base_models</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -78,7 +78,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for bci.base_models</h1><div class="highlight"><pre>
+  <h1>Source code for bci_ml.base_models</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -93,7 +93,7 @@
 
 <span class="kn">import</span> <span class="nn">math</span>
 
-<div class="viewcode-block" id="BaseModel"><a class="viewcode-back" href="../../base_models.html#bci.base_models.BaseModel">[docs]</a><span class="k">class</span> <span class="nc">BaseModel</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseModel"><a class="viewcode-back" href="../../base_models.html#bci_ml.base_models.BaseModel">[docs]</a><span class="k">class</span> <span class="nc">BaseModel</span><span class="p">:</span>
     <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Base class for the BCI models.&#39;&#39;&#39;</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Constructor method for BaseModel&#39;&#39;&#39;</span>
@@ -102,7 +102,7 @@
     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="nb">input</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="o">*</span><span class="nb">input</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-<div class="viewcode-block" id="BaseModel.forward"><a class="viewcode-back" href="../../base_models.html#bci.base_models.BaseModel.forward">[docs]</a>    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseModel.forward"><a class="viewcode-back" href="../../base_models.html#bci_ml.base_models.BaseModel.forward">[docs]</a>    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Returns model prediction for the given input data.</span>
 <span class="sd">        </span>
 <span class="sd">        :param input: The tensor of the analyzed data.</span>
@@ -112,7 +112,7 @@
 <span class="sd">        :rtype: FloatTensor&#39;&#39;&#39;</span>
         <span class="k">raise</span> <span class="ne">NotImplementedError</span></div>
 
-<div class="viewcode-block" id="BaseModel.fit"><a class="viewcode-back" href="../../base_models.html#bci.base_models.BaseModel.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseModel.fit"><a class="viewcode-back" href="../../base_models.html#bci_ml.base_models.BaseModel.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Fit model for the given input data.</span>
 
 <span class="sd">        :param input: The tensor of the analyzed data.</span>
@@ -120,7 +120,7 @@
         <span class="k">raise</span> <span class="ne">NotImplementedError</span></div></div>
 
 
-<div class="viewcode-block" id="IdentityModel"><a class="viewcode-back" href="../../base_models.html#bci.base_models.IdentityModel">[docs]</a><span class="k">class</span> <span class="nc">IdentityModel</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<div class="viewcode-block" id="IdentityModel"><a class="viewcode-back" href="../../base_models.html#bci_ml.base_models.IdentityModel">[docs]</a><span class="k">class</span> <span class="nc">IdentityModel</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
     <span class="sa">r</span><span class="sd">&#39;&#39;&#39;A model which defines identity mapping.</span>
 <span class="sd">    Mathematically define model :math:`\textbf{f}(\textbf{x}) = \textbf{x}`.</span>
 
@@ -141,7 +141,7 @@
         <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Constructor method for IdentityModel.&#39;&#39;&#39;</span>
         <span class="nb">super</span><span class="p">(</span><span class="n">IdentityModel</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 
-<div class="viewcode-block" id="IdentityModel.forward"><a class="viewcode-back" href="../../base_models.html#bci.base_models.IdentityModel.forward">[docs]</a>    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
+<div class="viewcode-block" id="IdentityModel.forward"><a class="viewcode-back" href="../../base_models.html#bci_ml.base_models.IdentityModel.forward">[docs]</a>    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
         <span class="sa">r</span><span class="sd">&#39;&#39;&#39;Returns model prediction for the given input data.</span>
 <span class="sd">        </span>
 <span class="sd">        :param input: The tensor of the analyzed data.</span>

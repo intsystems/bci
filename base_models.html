@@ -55,13 +55,13 @@
 <p class="caption" role="heading"><span class="caption-text">Packages:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Base Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#bci.base_models.BaseModel"><code class="docutils literal notranslate"><span class="pre">BaseModel</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bci.base_models.BaseModel.fit"><code class="docutils literal notranslate"><span class="pre">BaseModel.fit()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bci.base_models.BaseModel.forward"><code class="docutils literal notranslate"><span class="pre">BaseModel.forward()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bci_ml.base_models.BaseModel"><code class="docutils literal notranslate"><span class="pre">BaseModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bci_ml.base_models.BaseModel.fit"><code class="docutils literal notranslate"><span class="pre">BaseModel.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bci_ml.base_models.BaseModel.forward"><code class="docutils literal notranslate"><span class="pre">BaseModel.forward()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#bci.base_models.IdentityModel"><code class="docutils literal notranslate"><span class="pre">IdentityModel</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bci.base_models.IdentityModel.forward"><code class="docutils literal notranslate"><span class="pre">IdentityModel.forward()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bci_ml.base_models.IdentityModel"><code class="docutils literal notranslate"><span class="pre">IdentityModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bci_ml.base_models.IdentityModel.forward"><code class="docutils literal notranslate"><span class="pre">IdentityModel.forward()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -84,7 +84,7 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Base Models</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/intsystems/bci/blob/master/doc/source/base_models.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/intsystems/bci-ml/blob/master/doc/source/base_models.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -92,20 +92,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-bci.base_models">
-<span id="base-models"></span><h1>Base Models<a class="headerlink" href="#module-bci.base_models" title="Permalink to this heading"></a></h1>
-<p>The <a class="reference internal" href="#module-bci.base_models" title="bci.base_models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">bci.base_models</span></code></a> contains classes:</p>
+  <section id="module-bci_ml.base_models">
+<span id="base-models"></span><h1>Base Models<a class="headerlink" href="#module-bci_ml.base_models" title="Permalink to this heading"></a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">bci.base_models</span></code> contains classes:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#bci.base_models.BaseModel" title="bci.base_models.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">bci.base_models.BaseModel</span></code></a></p></li>
-<li><p><a class="reference internal" href="#bci.base_models.IdentityModel" title="bci.base_models.IdentityModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">bci.base_models.IdentityModel</span></code></a></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bci.base_models.BaseModel</span></code></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bci.base_models.IdentityModel</span></code></p></li>
 </ul>
 <dl class="py class">
-<dt class="sig sig-object py" id="bci.base_models.BaseModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bci.base_models.</span></span><span class="sig-name descname"><span class="pre">BaseModel</span></span><a class="reference internal" href="_modules/bci/base_models.html#BaseModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci.base_models.BaseModel" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bci_ml.base_models.BaseModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bci_ml.base_models.</span></span><span class="sig-name descname"><span class="pre">BaseModel</span></span><a class="reference internal" href="_modules/bci_ml/base_models.html#BaseModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_ml.base_models.BaseModel" title="Permalink to this definition"></a></dt>
 <dd><p>Base class for the BCI models.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="bci.base_models.BaseModel.fit">
-<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci/base_models.html#BaseModel.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci.base_models.BaseModel.fit" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bci_ml.base_models.BaseModel.fit">
+<span class="sig-name descname"><span class="pre">fit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci_ml/base_models.html#BaseModel.fit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_ml.base_models.BaseModel.fit" title="Permalink to this definition"></a></dt>
 <dd><p>Fit model for the given input data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -115,8 +115,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="bci.base_models.BaseModel.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci/base_models.html#BaseModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci.base_models.BaseModel.forward" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bci_ml.base_models.BaseModel.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci_ml/base_models.html#BaseModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_ml.base_models.BaseModel.forward" title="Permalink to this definition"></a></dt>
 <dd><p>Returns model prediction for the given input data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -134,8 +134,8 @@
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="bci.base_models.IdentityModel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bci.base_models.</span></span><span class="sig-name descname"><span class="pre">IdentityModel</span></span><a class="reference internal" href="_modules/bci/base_models.html#IdentityModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci.base_models.IdentityModel" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bci_ml.base_models.IdentityModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bci_ml.base_models.</span></span><span class="sig-name descname"><span class="pre">IdentityModel</span></span><a class="reference internal" href="_modules/bci_ml/base_models.html#IdentityModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_ml.base_models.IdentityModel" title="Permalink to this definition"></a></dt>
 <dd><p>A model which defines identity mapping.
 Mathematically define model <span class="math notranslate nohighlight">\(\textbf{f}(\textbf{x}) = \textbf{x}\)</span>.</p>
 <div class="admonition warning">
@@ -153,8 +153,8 @@ Mathematically define model <span class="math notranslate nohighlight">\(\textbf
 </pre></div>
 </div>
 <dl class="py method">
-<dt class="sig sig-object py" id="bci.base_models.IdentityModel.forward">
-<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci/base_models.html#IdentityModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci.base_models.IdentityModel.forward" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="bci_ml.base_models.IdentityModel.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/bci_ml/base_models.html#IdentityModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#bci_ml.base_models.IdentityModel.forward" title="Permalink to this definition"></a></dt>
 <dd><p>Returns model prediction for the given input data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
