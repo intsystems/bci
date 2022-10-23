@@ -5,7 +5,7 @@ Installation
 Requirements
 ============
 
-- Python >= 3.8
+- Python >= 3.6
 - pip >= 22.0
 
 Installing by using PyPi
