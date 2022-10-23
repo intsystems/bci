@@ -52,7 +52,7 @@ class IdentityModel(BaseModel):
     >>>
     >>> model = IdentityModel()
     >>> X = torch.randn(2, 1) # Generate random tensor
-    >>> predict = model(X)
+    >>> model(X)
     tensor([[0.3367],
         [0.1288]])'''
 
