@@ -12,7 +12,7 @@ BCI Lib
     :target: https://github.com/intsystems/bci/tree/master
     :alt: Test coverage
 
-.. |docs| image:: https://github.com/intsystems/bciworkflows/docs/badge.svg
+.. |docs| image:: https://github.com/intsystems/bci/workflows/docs/badge.svg
     :target: https://github.com/intsystems/bci/
     :alt: Build status
 
