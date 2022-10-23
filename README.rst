@@ -8,7 +8,7 @@ BCI Lib
     :target: https://github.com/intsystems/bci/tree/master
     :alt: Test status
 
-.. |codecov| image:: https://img.shields.io/codecov/c/github/andriygav/mixturelib/master
+.. |codecov| image:: https://img.shields.io/codecov/c/github/intsystems/bci/master
     :target: https://github.com/intsystems/bci/tree/master
     :alt: Test coverage
 
