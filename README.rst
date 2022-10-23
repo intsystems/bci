@@ -2,7 +2,7 @@
 BCI Lib
 #######
 
-|test| |codecov| |docs| |readthedocs| |pypi| 
+|test| |codecov| |docs| |pypi| 
 
 .. |test| image:: https://github.com/intsystems/bci/workflows/test/badge.svg
     :target: https://github.com/intsystems/bci/tree/master
