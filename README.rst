@@ -8,8 +8,8 @@ BCI Lib
     :target: https://github.com/intsystems/bci/tree/master
     :alt: Test status
 
-.. |codecov| image:: https://img.shields.io/codecov/c/github/intsystems/bci/master
-    :target: https://github.com/intsystems/bci/tree/master
+.. |codecov| image:: https://codecov.io/gh/intsystems/bci/branch/master/graph/badge.svg?token=MK7O5AH3MG 
+    :target: https://codecov.io/gh/intsystems/bci
     :alt: Test coverage
 
 .. |docs| image:: https://github.com/intsystems/bci/workflows/docs/badge.svg
