@@ -8,35 +8,32 @@ jobs:
     
     strategy:
       matrix:
-        python-version: [3.6]
+        python-version: [3.8]
         
     steps:
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.6
+          python-version: 3.8
 
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         
       - name: Install Dependencies
         run: |
-          pip install -U pytest
-          pip install -U pytest-cov
+          pip install -U pytest pytest-cov
           pip install -U -r src/requirements.txt
           
       - name: Testing
         run: |
-          PYTHONPATH=src/ pytest tests/ --cov=src/mixturelib --cov-report=xml
-
+          PYTHONPATH=src/ pytest tests/ --cov=bci --cov-report=xml
+          
       - name: Upload to Codecov
-        uses: codecov/codecov-action@v1  
+        uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage.xml
-          flags: unittests
-          name: codecov-mixturelib
+          files: ./coverage.xml,
           fail_ci_if_error: true
+          verbose: true
 
   docs:
     name: docs
