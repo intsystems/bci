@@ -1,7 +1,7 @@
 import io
 from setuptools import setup, find_packages
 
-from bci import __version__
+from bci_ml import __version__
 
 def read(file_path):
     with io.open(file_path, 'r', encoding='utf-8') as f:
