@@ -27,7 +27,7 @@ Implementation code for BCI models. The `source code <https://github.com/intsyst
 
 All methods were implemented based on ``pytorch`` for simple parallelization by using ``cuda``.
 
-All information about this project can be found in the `documentation <https://andriygav.github.io/MixtureLib/>`_.
+All information about this project can be found in the `documentation <https://intsystems.github.io/bci/>`_.
 
 Requirements and Installation
 =============================
