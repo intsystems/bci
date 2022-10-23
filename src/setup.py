@@ -14,14 +14,14 @@ requirements = read('requirements.txt')
 
 setup(
     # metadata
-    name='bci',
+    name='bci-ml',
     version=__version__,
     license='MIT',
     author='Intelligent Systems',
     author_email="mlalgorithms@gmail.com",
     description='lib for signal decoding, python package',
     long_description=readme,
-    url='https://github.com/intsystems/bci',
+    url='https://github.com/intsystems/bci-ml',
 
     # options
     packages=find_packages(),

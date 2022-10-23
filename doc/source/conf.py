@@ -15,7 +15,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath('../../src/'))
 
-from bci import __version__
+from bci_ml import __version__
 
 
 # -- Project information -----------------------------------------------------
@@ -54,7 +54,7 @@ html_extra_path = []
 html_context = {
     "display_github": True, # Integrate GitHub
     "github_user": "intsystems", # Username
-    "github_repo": "bci", # Repo name
+    "github_repo": "bci-ml", # Repo name
     "github_version": "master", # Version
     "conf_py_path": "/doc/source/", # Path in the checkout to the docs root
 }

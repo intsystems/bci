@@ -15,13 +15,13 @@ Install
 -------
 .. code-block:: bash
 
-	python3 -m pip install bci
+	python3 -m pip install bci-ml
 
 Uninstall
 ---------
 .. code-block:: bash
 
-	python3 -m pip uninstall bci
+	python3 -m pip uninstall bci-ml
 
 Installing from GitHub source
 =============================
@@ -30,12 +30,12 @@ Install
 -------
 .. code-block:: bash
 
-	git clone https://github.com/intsystems/bci.git
-	cd bci
+	git clone https://github.com/intsystems/bci-ml.git
+	cd bci-ml
 	python3 -m pip install ./src/
 
 Uninstall
 ---------
 .. code-block:: bash
 
-  python3 -m pip uninstall bci
+  python3 -m pip uninstall bci-ml

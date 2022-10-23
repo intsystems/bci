@@ -2,7 +2,7 @@
 Base Models
 ************
 
-.. automodule:: bci.base_models
+.. automodule:: bci_ml.base_models
     :members:
 
 
