@@ -3,7 +3,7 @@ import tensorly as tl
 
 tl.set_backend('pytorch')
 
-def hosvd(
+def hosvd_t(
     t,
     new_shape
 ):
